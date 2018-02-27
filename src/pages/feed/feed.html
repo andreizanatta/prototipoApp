@@ -19,18 +19,18 @@
 
     <ion-item>
       
-      <ion-input class="ui" id="u" type="number"></ion-input>
+      <ion-input [(ngModel)]="n1" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
       
-      <ion-input  class="di" id="d" type="number"></ion-input>
+      <ion-input [(ngModel)]="n2" type="number"></ion-input>
     </ion-item>
 
   </ion-list>
 
   <div padding>
-    <button (click)="soma(ui, di)" ion-button  color="primary" block >Somar</button>
+    <button (click)="soma(n1, n2)" ion-button  color="primary" block >Somar</button>
   </div>
 
 </ion-content>
