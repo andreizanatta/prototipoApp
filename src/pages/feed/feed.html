@@ -1,0 +1,36 @@
+<!--
+  Generated template for the FeedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Feed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      
+      <ion-input class="ui" id="u" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      
+      <ion-input class="di" id="d" type="number"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button (click)="soma(ui.value, di.value)" ion-button  color="primary" block >Somar</button>
+  </div>
+
+</ion-content>
