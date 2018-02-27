@@ -23,7 +23,7 @@ export class FeedPage {
   }
 
   public soma(primeiro:number, segundo:number) {
-    alert(primeiro + segundo);
+    alert("SOMA " + (primeiro + segundo));
   }
 
 }
