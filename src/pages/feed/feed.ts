@@ -15,6 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FeedPage {
 
+  n1 = '';
+  n2 = '';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,8 +25,8 @@ export class FeedPage {
     console.log('ionViewDidLoad FeedPage');
   }
 
-  public soma(primeiro:number, segundo:number) {
-    alert("SOMA " + (primeiro + segundo));
+  public soma() {
+    alert("SOMA " + (this.n1 + this.n2));
   }
 
 }
