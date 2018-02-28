@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -17,9 +15,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FeedPage {
 
-  n1 = '';
-  n2 = '';
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -27,8 +22,13 @@ export class FeedPage {
     console.log('ionViewDidLoad FeedPage');
   }
 
-  public soma() {
-    alert("SOMA " + (this.n1 + this.n2));
+  public soma(this) {
+    console.log(this.n1, this.n2);
+    alert(  " SOMA "           + ((this.n1) + (this.n2)) 
+          + " SOMA2 "          + (this.n1 + this.n2) 
+          + " Subtração: "     + (this.n1 - this.n2)
+          + " Multiplicação: " + (this.n1 * this.n2)
+          + " Divisão: "       + (this.n1 / this.n2));
   }
 
 }
