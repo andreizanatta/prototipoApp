@@ -24,7 +24,7 @@ export class FeedPage {
 
   public soma(this) {
     console.log(this.n1, this.n2);
-    alert(  " SOMA "           + ((this.n1) + (this.n2)) 
+    alert(  " SOMA "           + (parseInt(this.n1) + parseInt(this.n2)) 
           + " SOMA2 "          + (this.n1 + this.n2) 
           + " Subtração: "     + (this.n1 - this.n2)
           + " Multiplicação: " + (this.n1 * this.n2)
